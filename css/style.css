@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all .2s ease-in-out;
+  text-decoration: none;
+  list-style: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+:root {
+  --primary: #3b82f6;
+}
+
+.nav-divider {
+  width: 0%;
+  height: 3px;
+}
+
+.nav-divider.active {
+  width: 70%;
+}
+
+.navbar-items.active {
+  color: white;
+}
+
+.toggle>span {
+  position: absolute;
+  left: 0px;
+}
+
+.toggle>span:nth-child(1) {
+  transform: translateY(7px);
+}
+
+.toggle>span:nth-child(2) {
+  transform: translateY(-7px);
+}
+.toggle.active>span:nth-child(1) {
+  transform: translateY(0px) rotate(45deg);
+}
+
+.toggle.active>span:nth-child(2) {
+  transform: translateY(0px) rotate(-220deg);
+}
+
+.toggle.active>span:nth-child(3) {
+  left: 900px;
+}
+
+
+.nav.active{
+  transform: translateX(0px);
+}
+
+
+/* media screen for tablet */
+@media  screen and (min-width: 768px) {
+  .nav-wrapper{
+    position: relative;
+    width: auto;
+    height: auto;
+    top: 0px;
+    padding: 0px !important;
+    background: transparent;
+  }
+  .nav{
+    top: 0px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-items: center;
+    flex-direction: row;
+    background: transparent;
+    padding: 0px;
+    transform: translateX(0px);
+  }
+  .toggle{
+    display: none;
+  }
+}
+/* media screen for desktop */
+@media  screen and (min-width: 1024px) {
+  .nav-wrapper{
+    position: relative;
+    width: auto;
+    height: auto;
+    top: 0px;
+    padding: 0px !important;
+    background: transparent;
+  }
+  .nav{
+    transform: translateX(0px);
+    top: 0px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-items: center;
+    flex-direction: row;
+    background: transparent;
+    padding: 0px;
+  }
+  .toggle{
+    display: none;
+  }
+}
