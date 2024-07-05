@@ -57,6 +57,17 @@
 
 /* media screen for tablet */
 @media  screen and (min-width: 768px) {
+  .hero-section{
+    padding-top: 180px;
+    padding: 30px;
+  }
+  .box-title{
+    padding: 0px;
+  }
+  .pic-profile{
+    width: 250px;
+    height: 350px;
+  }
   .nav-wrapper{
     position: relative;
     width: auto;
@@ -83,6 +94,23 @@
 }
 /* media screen for desktop */
 @media  screen and (min-width: 1024px) {
+  .hero-section{
+    padding: 40px;
+    padding-top: 100px;
+  }
+  .title{
+    font-size: 30px;
+  }
+  .box-title{
+    padding: 0px;
+  }
+  .title-paragraph{
+  font-size: 24px;
+  }
+  .pic-profile{
+    width: 250px;
+    height: 400px;
+  }
   .nav-wrapper{
     position: relative;
     width: auto;
